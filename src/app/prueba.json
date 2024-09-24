@@ -1,0 +1,48 @@
+{
+  "reservaciones": [
+    {
+      "id": "1",
+      "fecha": "20 de febrero 2024",
+      "hora": "10:00 PM",
+      "nombre": "Doue Jon",
+      "numeroTelefono": "55-77-24-19-13",
+      "tipoBomba": "Bomba 28",
+      "metrosPorColar": "50",
+      "tiempoEstimado": "4 horas",
+      "requiereConcreto": "No",
+      "metrosRequeridos": "0 mts",
+      "tipoResistencia": "300",
+      "elementoAColar": "Dados",
+      "fraccionamiento": "",
+      "Lote": "",
+      "calle": "Prolongacion AV",
+      "calleNumero": "40",
+      "colonia": "Florentino",
+      "municipio": "Venustiano Carranza",
+      "codigoPostal": "015602",
+      "informacionAdicional": ""
+    },
+    {
+      "id": "2",
+      "fecha": "18 de febrero 2024",
+      "hora": "9:00 AM",
+      "nombre": "Jon Doue",
+      "numeroTelefono": "55-24-66-89-13",
+      "tipoBomba": "Bomba estacionaria",
+      "metrosPorColar": "30",
+      "tiempoEstimado": "2 horas",
+      "requiereConcreto": "Sí",
+      "metrosRequeridos": "100 mts",
+      "tipoResistencia": "200",
+      "elementoAColar": "Loza",
+      "fraccionamiento": "Florentino",
+      "Lote": "12AB",
+      "calle": "Reforma",
+      "calleNumero": "23",
+      "colonia": "Ampliación Quiroga",
+      "municipio": "Alvaro Obregon",
+      "codigoPostal": "012120",
+      "informacionAdicional": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolor, inventore beatae quisquam, ex non temporibus vero deserunt soluta consequatur quae expedita eos eaque. Quis labore veritatis molestias perspiciatis a!"
+    }
+  ]
+}

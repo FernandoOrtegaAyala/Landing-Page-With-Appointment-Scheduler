@@ -1,0 +1,299 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 201 96.3% 32.2%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 201 96.3% 32.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 0 0% 35%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.75rem;
+    --gris-fondo: 0 0% 60%;
+    --fondo: 0 0% 100%;
+    --fondo-calendario: 0 0% 100%;
+    --borde-calendario-interno: 0 0% 90%;
+    --borde-calendario-interno-dias: 0 0% 70%;
+    --fondo-boton: 204 80.2% 15.9%;
+    --fondo-tarjeta: 0 0% 100%;
+    --texto: 0 0% 0%;
+    --texto-maquinaria: 0 0% 40%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 201 90% 27.5%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+    --gris-fondo: 0 0% 13%;
+    --fondo: 0 0% 0%;
+    --fondo-calendario: 222.2 84% 4.9%;
+    --borde-calendario-interno: 0 0% 0%;
+    --borde-calendario-interno-dias: 0 0% 20%;
+    --fondo-boton: 201 90% 27.5%;
+    --fondo-tarjeta: 240 100% 5%;
+    --texto: 0 0% 100%;
+    --texto-maquinaria: 215 20.2% 65.1%;
+  }
+}
+
+.rbc-day-bg {
+  @apply bg-fondoCalendario;
+}
+.rbc-button-link {
+  @apply text-current;
+}
+.rbc-month-view {
+  @apply border-none pt-2 bg-fondoCalendario;
+}
+.rbc-month-header {
+  @apply border-bordeCalendarioInterno mb-4;
+}
+.rbc-header + .rbc-header {
+  @apply border-bordeCalendarioInterno;
+}
+.rbc-rtl .rbc-header + .rbc-header {
+  @apply border-bordeCalendarioInterno;
+}
+.rbc-month-row {
+  @apply border-bordeCalendarioInterno;
+}
+.rbc-month-row + .rbc-month-row {
+  @apply border-bordeCalendarioInterno;
+}
+.rbc-day-bg + .rbc-day-bg {
+  @apply border-bordeCalendarioInterno;
+}
+.rbc-header {
+  @apply border-bordeCalendarioInterno text-current;
+}
+
+.rbc-today {
+  @apply bg-primary text-white;
+}
+.rbc-day-slot.rbc-time-column.rbc-now.rbc-today {
+  @apply bg-fondoCalendario text-white;
+}
+.rbc-now {
+  @apply text-white;
+}
+.rbc-time-view {
+  @apply border-none;
+}
+.rbc-day-slot .rbc-time-slot {
+  @apply border-none;
+}
+.rbc-timeslot-group {
+  @apply min-h-16;
+}
+.rbc-timeslot-group {
+  @apply min-h-16 border-bordeCalendarioInternoDias;
+}
+.rbc-time-content > * + * > * {
+  @apply min-h-16 border-bordeCalendarioInternoDias;
+}
+.rbc-time-header.rbc-overflowing {
+  @apply h-auto border-none;
+}
+.rbc-time-header-content {
+  @apply h-auto border-l-bordeCalendarioInternoDias;
+}
+.rbc-time-content {
+  @apply h-auto border-t-bordeCalendarioInternoDias;
+}
+.rbc-header {
+  @apply text-lg h-8;
+}
+
+.rbc-allday-cell .rbc-row-bg > div {
+  @apply h-auto;
+}
+.rbc-allday-cell .rbc-row-content > div {
+  @apply h-auto;
+}
+
+.rbc-button-link {
+  @apply h-full;
+}
+
+.rbc-row-content {
+  height: 100% !important;
+}
+
+.rbc-date-cell {
+  height: 100% !important;
+}
+
+.rbc-month-row > .rbc-row-content > .rbc-row:nth-child(2) {
+  margin-top: 20px !important;
+}
+
+.rbc-date-cell > button {
+  width: 55px !important;
+  position: absolute !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+}
+
+.react-calendar {
+  width: 100% !important;
+  background: var(--fondo-calendario) !important;
+  border: none !important;
+}
+
+.rbc-agenda-empty {
+  @apply text-2xl text-center font-bold mt-60 mx-10;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 2px !important;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  font: inherit;
+  font-size: 0.833em;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth.react-calendar__month-view__days__day--weekend {
+  color: hsl(var(--fondo-calendario)) !important;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: hsl(var(--fondo-calendario)) !important;
+}
+
+.react-calendar__tile--now {
+  background: hsl(var(--primary)) !important;
+}
+.react-calendar__tile--now > abbr {
+  color: #fff !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: hsl(var(--texto)) !important;
+}
+
+abbr:where([title]) {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.react-calendar__tile--now {
+  @apply bg-primary;
+}
+.css-qdfq1c {
+  @apply bg-primary;
+}
+
+.rbc-row .rbc-date-cell:nth-child(7) .rbc-button-link {
+  color: red;
+}
+.react-calendar__month-view__days__day:not(
+    .react-calendar__month-view__days__day--neighboringMonth
+  ):nth-child(7),
+.react-calendar__month-view__days__day:not(
+    .react-calendar__month-view__days__day--neighboringMonth
+  ):nth-child(14),
+.react-calendar__month-view__days__day:not(
+    .react-calendar__month-view__days__day--neighboringMonth
+  ):nth-child(21),
+.react-calendar__month-view__days__day:not(
+    .react-calendar__month-view__days__day--neighboringMonth
+  ):nth-child(28),
+.react-calendar__month-view__days__day:not(
+    .react-calendar__month-view__days__day--neighboringMonth
+  ):nth-child(35)
+  > abbr {
+  color: red !important;
+}
+
+.react-calendar__month-view__weekdays__weekday:nth-child(7) {
+  color: red !important;
+}
+.rbc-header:nth-child(7) {
+  color: red;
+}
+
+.rbc-agenda-view table.rbc-agenda-table {
+  border: none !important;
+  border-bottom: 1px solid hsl(var(--borde-calendario-interno-dias)) !important;
+}
+.rbc-agenda-view {
+  width: 100% !important;
+}
+.rbc-agenda-date-cell {
+  height: 100px !important;
+  width: 20px !important;
+  white-space: normal !important;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody > tr > td + td {
+  border-left: 1px solid hsl(var(--borde-calendario-interno-dias)) !important;
+}
+.rbc-agenda-time-cell {
+  border-left: 1px solid hsl(var(--borde-calendario-interno-dias)) !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.rbc-agenda-view table.rbc-agenda-table thead > tr > th {
+  padding: 3px 5px;
+  text-align: left;
+  border-bottom: 1px solid hsl(var(--borde-calendario-interno-dias)) !important;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody > tr + tr {
+  border-top: 1px solid hsl(var(--borde-calendario-interno-dias)) !important;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody > tr > td {
+  vertical-align: middle !important;
+}
+
+.event-day {
+  background-color: #ff6e00 !important;
+  color: #fff !important;
+}
+
+.rbc-agenda-event-cell {
+  @apply truncate;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+}
