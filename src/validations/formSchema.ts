@@ -10,7 +10,10 @@ export const mappedEleccion: { [key in Eleccion]: string } = {
 };
 
 const tipoBomba = [
+<<<<<<< HEAD
   "Ninguna",
+=======
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
   "Bomba 28",
   "Bomba 32",
   "Bomba estacionaria",
@@ -20,7 +23,10 @@ const tipoBomba = [
 export type TipoBomba = (typeof tipoBomba)[number];
 
 export const mappedTipoBomba: { [key in TipoBomba]: string } = {
+<<<<<<< HEAD
   Ninguna: "Ninguna",
+=======
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
   "Bomba 28": "Bomba 28",
   "Bomba 32": "Bomba 32",
   "Bomba estacionaria": "Bomba estacionaria",
@@ -98,7 +104,11 @@ export const formSchema = z
         message: "Ingrese máximo 55 caracteres",
       })
       .regex(
+<<<<<<< HEAD
         /^[A-Za-z\s]+$/,
+=======
+        /^[A-Za-z]+$/,
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
         "El campo nombre completo sólo debe contener letras de la A a la Z."
       ),
     numero: z
@@ -144,7 +154,11 @@ export const formSchema = z
         message: "Ingrese máximo 45 caracteres en municipio o delegación",
       })
       .regex(
+<<<<<<< HEAD
         /^[A-Za-z\s]+$/,
+=======
+        /^[A-Za-z]+$/,
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
         "El campo municipio o delegación sólo debe contener letras de la A a la Z."
       ),
     codigoPostal: z
@@ -167,7 +181,11 @@ export const formSchema = z
         message: "Ingrese máximo 45 caracteres",
       })
       .regex(
+<<<<<<< HEAD
         /^[A-Za-z\s]+$/,
+=======
+        /^[A-Za-z]+$/,
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
         "El campo colonia sólo debe contener letras de la A a la Z."
       ),
     calle: z
@@ -179,7 +197,11 @@ export const formSchema = z
         message: "Ingrese máximo 50 caracteres",
       })
       .regex(
+<<<<<<< HEAD
         /^[A-Za-z\s]+$/,
+=======
+        /^[A-Za-z]+$/,
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
         "El campo calle sólo debe contener letras de la A a la Z."
       ),
     numeroExterior: z

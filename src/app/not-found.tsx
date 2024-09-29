@@ -16,7 +16,11 @@ export default function NotFound() {
         </div>
         <Link
           href="/"
+<<<<<<< HEAD
           className="mt-5 px-6 py-2 md:text-2xl rounded-md bg-primary text-white hover:bg-primary/90 ">
+=======
+          className="mt-5 px-6 py-2 md:text-2xl rounded-md bg-primary text-primary-foreground hover:bg-primary/90 ">
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
           Inicio
         </Link>
       </div>

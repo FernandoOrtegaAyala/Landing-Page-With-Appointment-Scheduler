@@ -50,7 +50,11 @@ export default function Maquinaria({ form }: { form: UseFormReturn<Inputs> }) {
       const horas = Math.floor(tiempoTotal / 60);
       const minutosRestantes = tiempoTotal % 60;
       return (
+<<<<<<< HEAD
         <div className="mb-8 mt-2 ">
+=======
+        <div className="mb-2 ">
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
           <div className="flex  items-center">
             <InfoIcon className="text-primary w-5 h-5" />
             <p className="text-sm ml-2">

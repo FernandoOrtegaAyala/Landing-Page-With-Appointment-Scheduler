@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+<<<<<<< HEAD
         textoMaquinaria: "hsl(var(--texto-maquinaria))",
         texto: "hsl(var(--texto))",
         fondoTarjeta: "hsl(var(--fondo-tarjeta))",
@@ -26,6 +27,8 @@ const config = {
         bordeCalendarioInternoDias: "hsl(var(--borde-calendario-interno-dias))",
         bordeCalendarioInterno: "hsl(var(--borde-calendario-interno))",
         fondoCalendario: "hsl(var(--fondo-calendario))",
+=======
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
         grisFondo: "hsl(var(--gris-fondo))",
         fondo: "hsl(var(--fondo))",
         border: "hsl(var(--border))",
@@ -77,8 +80,14 @@ const config = {
           to: { height: "0" },
         },
         "open-menu": {
+<<<<<<< HEAD
           "0%": { transform: "scaleX(0)" },
           "100%": { transform: "scaleX(1)" },
+=======
+          "0%": { transform: "scaleY(0)" },
+          "80%": { transform: "scaleY(1.2)" },
+          "100%": { transform: "scaleY(1)" },
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
         },
         "close-menu": {
           "0%": { transform: "scaleY(1)" },
@@ -88,7 +97,11 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+<<<<<<< HEAD
         "open-menu": "open-menu 0.3s ease-in-out forwards",
+=======
+        "open-menu": "open-menu 0.5s ease-in-out forwards",
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
         "close-menu": "close-menu 0.4s ease-in-out forwards",
       },
     },

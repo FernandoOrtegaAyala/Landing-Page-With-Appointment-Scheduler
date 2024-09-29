@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 
+<<<<<<< HEAD
 import "react-big-calendar/lib/css/react-big-calendar.css";
+=======
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
 import "./globals.css";
 
 import { ThemeProvider } from "@/components/theme-provider";
@@ -13,7 +16,11 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Demo aplicación administrativa",
+=======
+  title: "Demo Alquiler maquinaria",
+>>>>>>> 96a3ad873103083cc5428418cfca434788998b4b
   description: "Proyecto demostrativo de funcionalidades para aplicación movil",
 };
 
